@@ -108,7 +108,7 @@
 
     </br>
 
-    <% for (int i = 0; i <= cpt; i++) { %>
+    <% for (int i = 0; i < cpt; i++) { %>
 
         <% for (int j = 1; j <= i; j++) { %>
             <%= "&nbsp;&nbsp;" %>
