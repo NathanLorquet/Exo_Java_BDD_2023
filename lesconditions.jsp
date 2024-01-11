@@ -50,6 +50,31 @@ A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
 
 <h2>Exercice 2 : Pair ou Impair ?</h2>
 <p>Écrivez un programme pour vérifier si un nombre est pair ou impair en utilisant une structure if</p>
+<% modulo1 = intValeur1 % 2 %>
+<% modulo2 = intValeur2 % 2 %>
+<% modulo3 = intValeur3 % 2 %>
+
+<p>A = <%= intValeur1 %></p>
+<p>B = <%= intValeur2 %></p>
+<p>C = <%= intValeur3 %></p>
+
+<% if (modulo1 == 0) { %>
+    <p>A est pair</p>
+<% } else { %>
+    <p>A est impair</p>
+<% } %>
+
+<% if (modulo2 == 0) { %>
+    <p>A est pair</p>
+<% } else { %>
+    <p>A est impair</p>
+<% } %>
+
+<% if (modulo3 == 0) { %>
+    <p>A est pair</p>
+<% } else { %>
+    <p>A est impair</p>
+<% } %>
 
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
