@@ -112,6 +112,8 @@
 <p>Créer un formulaire pour saisir un nouveau film dans la base de données</p>
 
 <form action="#" method="post">
+    <label for="filmIdAjout">ID du film :</label>
+    <input type="text" id="filmIdAjout" name="filmIdAjout">
     <label for="filmTitre">Titre du film : </label>
     <input type="text" id="filmTitre" name="titre">
     <label for="filmAnnee">Année de sortie : </label>
@@ -121,15 +123,17 @@
 
 
 <%
+    String idFilm = request.getParameter("filmIdAjout");
     String titre = request.getParameter("titre");
     String anneeAjout = request.getParameter("annee");
 
     if (titre != null && anneeAjout != null) {
         conn = DriverManager.getConnection(url, user, password);
-        String createSQL  = "INSERT INTO Film (titre, année) VALUES (?, ?)";
+        String createSQL  = "INSERT INTO Film (IdFilm, titre, année) VALUES (?; ?, ?)";
         PreparedStatement createStmt  = conn.prepareStatement(createSQL);
-        createStmt.setString(1, titre);
-        createStmt.setInt(2, Integer.parseInt(anneeAjout));
+        createStmt.setInt(1, Integer.parseInt(idFilm));
+        createStmt.setString(2, titre);
+        createStmt.setInt(3, Integer.parseInt(anneeAjout));
 
         int rowsCreated = createStmt.executeUpdate();
 
