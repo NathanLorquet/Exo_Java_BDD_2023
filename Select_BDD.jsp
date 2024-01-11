@@ -58,10 +58,10 @@
         rs = pstmt.executeQuery();
 
         while (rs.next()) {
-            colonne1 = rs.getString("idFilm");
-            colonne2 = rs.getString("titre");
-            colonne3 = rs.getString("année");
-            out.println("id : " + colonne1 + ", titre : " + colonne2 + ", année : " + colonne3 + "</br>");
+            String colonne1Annee = rs.getString("idFilm");
+            String colonne2Annee = rs.getString("titre");
+            String colonne3Annee = rs.getString("année");
+            out.println("id : " + colonne1Annee + ", titre : " + colonne2Annee + ", année : " + colonne3Annee + "</br>");
         }
  
         rs.close();
