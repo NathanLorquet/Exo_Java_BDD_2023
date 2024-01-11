@@ -38,17 +38,14 @@
 <p>
     <% int compteur = 0; %>
     <% for (int i = 0; i < longueurChaine; i++) { %>
-        <% for (int j = 0; j <= i; j++) { %>
-           <% if(chaine.charAt(i) == recherche) { %>
-            <%= compteur++ %>
+            <% if(chaine.charAt(i) == recherche) { %>
+                <% compteur++ %>
            <% } %>
-        <% } %>
     <% } %>
 
     <p> Il y a <%= compteur %> e dans la chaine de charactères</p>
 
 </p>
-
 <h2>Exercice 2 : Affichage verticale</h2>
 <p>Ecrire le programme pour afficher le texte en vertical</br>
 Exemple : Bonjour</br>
