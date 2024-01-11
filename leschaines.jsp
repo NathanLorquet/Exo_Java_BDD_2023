@@ -40,7 +40,7 @@
     <% for (int i = 0; i < longueurChaine; i++) { %>
         <% for (int j = 0; j <= i; j++) { %>
            <% if(chaine.charAt(i) == recherche) { %>
-            <% compteur++ %>
+            <%= compteur++ %>
            <% } %>
         <% } %>
     <% } %>
