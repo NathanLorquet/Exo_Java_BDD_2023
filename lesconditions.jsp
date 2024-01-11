@@ -36,16 +36,13 @@
 <h2>Exercice 1 : Comparaison 1</h2>
 <p>Ecrire un programme qui demande à l'utilisateur de saisir 3 valeurs (des chiffres),</br>
 A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
-Exemple :</br>
-A = 10</br>
-B = 20</br>
-C = 15</br>
-Oui C est compris entre A et B</p>
+
+    <p>A = <%= intValeur1 %></p>
+    <p>B = <%= intValeur2 %></p>
+    <p>C = <%= intValeur3 %></p>
 
 <% if (intValeur1 < intValeur3 && intValeur3 < intValeur2) { %>
-    <p>A = </p><%= intValeur1 %>
-    <p>B = </p><%= intValeur2 %>
-    <p>C = </p><%= intValeur3 %>
+
     <p> Oui C est compris entre A et B</p>
 <% } else { %>
     <p> Non C n'est pas compris entre A et B</p>
