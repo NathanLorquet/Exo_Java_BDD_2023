@@ -50,9 +50,9 @@ A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
 
 <h2>Exercice 2 : Pair ou Impair ?</h2>
 <p>Écrivez un programme pour vérifier si un nombre est pair ou impair en utilisant une structure if</p>
-<% int modulo1 = intValeur1 % 2 %>
-<% int modulo2 = intValeur2 % 2 %>
-<% int modulo3 = intValeur3 % 2 %>
+<% int modulo1 = intValeur1 % 2; %>
+<% int modulo2 = intValeur2 % 2; %>
+<% int modulo3 = intValeur3 % 2; %>
 
 <p>A = <%= intValeur1 %></p>
 <p>B = <%= intValeur2 %></p>
