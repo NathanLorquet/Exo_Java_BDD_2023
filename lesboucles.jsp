@@ -53,8 +53,8 @@
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>
-    <% for (int i = cpt; i <= 1; i++) { %>
-        <% for (int j = 1; j <= i; j++) { %>
+    <% for (int i = 1; i <= cpt; i++) { %>
+        <% for (int j = 1; j <= cpt-i; j++) { %>
             <%= "*" %>
         <% } %>
         </br>
