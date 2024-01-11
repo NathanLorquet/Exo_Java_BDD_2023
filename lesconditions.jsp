@@ -43,9 +43,9 @@ C = 15</br>
 Oui C est compris entre A et B</p>
 
 <% if (intValeur1 < intValeur3 && intValeur3 < intValeur2) { %>
-    <p>A = </p><% intValeur1 %>
-    <p>B = </p><% intValeur2 %>
-    <p>C = </p><% intValeur3 %>
+    <p>A = </p><%= intValeur1 %>
+    <p>B = </p><%= intValeur2 %>
+    <p>C = </p><%= intValeur3 %>
     <p> Oui C est compris entre A et B</p>
 <% } else { %>
     <p> Non C n'est pas compris entre A et B</p>
