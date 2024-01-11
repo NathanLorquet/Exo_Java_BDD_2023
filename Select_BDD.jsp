@@ -7,10 +7,6 @@
     <title>Connexion à MariaDB via JSP</title>
 </head>
 <body>
-<form action="#" method="post">
-    <p>Saisir une année : <input type="text" id="inputValeur" name="annee">
-    <p><input type="submit" value="Afficher">
-</form>
 
 <h2>Exercice 1 : Les films entre 2000 et 2015</h2>
 <p>Extraire les films dont l'année est supérieur à l'année 2000 et inférieur à 2015.</p>
@@ -47,6 +43,12 @@
 
 <h2>Exercice 2 : Année de recherche</h2>
 <p>Créer un champ de saisie permettant à l'utilisateur de choisir l'année de sa recherche.</p>
+
+<form action="#" method="post">
+    <p>Saisir une année : <input type="text" id="inputValeur" name="annee">
+    <p><input type="submit" value="Afficher">
+</form>
+
 
 <%
     String annee = request.getParameter("annee");
