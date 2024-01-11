@@ -120,15 +120,6 @@
 </form>
 
 
-<form action="#" method="post">
-    <label for="filmTitre">Titre du film : </label>
-    <input type="text" id="filmTitre" name="titre">
-    <label for="filmAnnee">Année de sortie : </label>
-    <input type="text" id="filmAnnee" name="annee">
-    <input type="submit" value="Ajouter le film">
-</form>
-
-
 <%
     String titre = request.getParameter("titre");
     String anneeAjout = request.getParameter("annee");
