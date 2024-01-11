@@ -89,6 +89,7 @@
         String newTitle = request.getParameter("newTitle");
 
         if (filmId != null && newTitle != null) {
+            conn = DriverManager.getConnection(url, user, password);
             int idToUpdate = Integer.parseInt(filmId);
             String updateSQL = "UPDATE Film SET titre = ? WHERE idFilm = ?";
             PreparedStatement updateStmt = conn.prepareStatement(updateSQL);
