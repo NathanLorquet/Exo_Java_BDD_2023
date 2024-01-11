@@ -65,15 +65,15 @@ A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
 <% } %>
 
 <% if (modulo2 == 0) { %>
-    <p>A est pair</p>
+    <p>B est pair</p>
 <% } else { %>
-    <p>A est impair</p>
+    <p>B est impair</p>
 <% } %>
 
 <% if (modulo3 == 0) { %>
-    <p>A est pair</p>
+    <p>C est pair</p>
 <% } else { %>
-    <p>A est impair</p>
+    <p>C est impair</p>
 <% } %>
 
 <% } %>
